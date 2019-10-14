@@ -7,7 +7,7 @@ CLASSES = {
 const MODEL_PATH =
     'model.json';
 
-const TOPK_PREDICTIONS = 5;
+const TOPK_PREDICTIONS = 3;
 
 let my_model;
 const demo = async () => {
@@ -162,8 +162,8 @@ filesElement.addEventListener('change', evt => {
       // Fill the image & call predict.
       let img = document.createElement('img');
       img.src = e.target.result;
-      img.width = IMAGE_SIZE;
-      img.height = IMAGE_SIZE;
+      img.width = 300;
+      img.height = 500;
       img.onload = () => predict(img);
     };
 
