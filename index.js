@@ -1,7 +1,7 @@
 CLASSES = {
-  0: 'class0',
-  1: 'class1',
-  2: 'class2'
+  0: 'Library',
+  1: 'Statue',
+  2: 'Flag_Base'
 };
 
 const MODEL_PATH =
