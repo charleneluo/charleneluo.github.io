@@ -1,7 +1,7 @@
 CLASSES = {
-  0: 'class0',
-  1: 'class1',
-  2: 'class2',
+  0: 'Library',
+  1: 'Statue',
+  2: 'Flag_Base',
 };
 
 const MODEL_PATH =
@@ -64,7 +64,7 @@ async function predict(imgElement) {
 
     startTime2 = performance.now();
     // Make a prediction through my_model.
-    return my_model.predict(batched)[0];
+    return my_model.predict(batched);
   });
 
   // Convert logits to probabilities and class names.
