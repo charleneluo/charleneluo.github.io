@@ -64,7 +64,7 @@ async function predict(imgElement) {
 
     startTime2 = performance.now();
     // Make a prediction through my_model.
-    return my_model.predict(batched);
+    return my_model.predict(batched)[0];
   });
 
   // Convert logits to probabilities and class names.
